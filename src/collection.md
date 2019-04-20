@@ -36,3 +36,4 @@
             </settings>
 
         </configuration>
+Mybatis返回的对象如果有关联字段，除了使用resultMap还有下面这种方式（虽然我还是觉得resultMap会方便一点）
