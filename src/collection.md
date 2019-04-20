@@ -58,3 +58,15 @@ Mybatis返回的对象如果有关联字段，除了使用resultMap还有下面�
                 WHERE sk.seckill_id=#{seckillId}
                 AND sk.user_phone=#{userPhone}
             </select>
+数据库连接池可能用到的属性：
+
+         <!--c3p0私有属性-->
+        <property name="maxPoolSize" value="30"/>
+        <property name="minPoolSize" value="10"/>
+        <!--关闭连接后不自动commit-->
+        <property name="autoCommitOnClose" value="false"/>
+
+        <!--获取连接超时时间-->
+        <property name="checkoutTimeout" value="1000"/>
+        <!--当获取连接失败重试次数-->
+        <property name="acquireRetryAttempts" value="2"/>
