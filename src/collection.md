@@ -37,6 +37,7 @@
 
         </configuration>
 Mybatis返回的对象如果有关联字段，除了使用resultMap还有下面这种方式（虽然我还是觉得resultMap会方便一点）
+
             <select id="queryByIdWithSeckill" resultType="SuccessKilled">
                 <!--根据seckillId查询SuccessKilled对象，并携带Seckill对象-->
                 <!--如何告诉mybatis把结果映射到SuccessKill属性同时映射到Seckill属性-->
